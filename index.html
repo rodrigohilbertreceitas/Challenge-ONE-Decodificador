@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge ONE | Decodificador</title>
+    <script src="functions.js"></script>
+</head>
+
+<body>
+    <header class="header-section">
+        <a href="https://www.alura.com.br/" target="_blank">
+            <img src="img/Logo.png" alt="Alura">
+        </a>
+    </header>
+    <main class="base">
+        <section class="base-section">
+            <textarea class="texto-cod" type="text" placeholder="Digite seu texto"
+                oninput="validarInput(this)"></textarea>
+            <div class="base-section-aviso">
+                <img class="img-aviso" src="img/bi_exclamation-circle-fill.png" alt="Atenção!">
+                <h5 class="text-aviso">Apenas letras mínusculas e sem acento.</h5>
+            </div>
+            <div class="base-section-buttons">
+                <button class="text-button1" onclick="criptografar()">Criptografar</button>
+                <button class="text-button2" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="cripto-section">
+            <div class="card-criptografado" id="card-criptografado">
+                <img class="img-card-criptografado" src="img/High quality products 1 1.png" alt="Imagem Lupa">
+                <h3 class="text-card-cripto1">Nenhuma mensagem encontrada</h3>
+                <h5 class="text-card-cripto2">Digite um texto que você deseja criptografar ou descriptografar.</h5>
+                <p id="resultado" class="texto-original"></p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
